@@ -63,7 +63,7 @@ const Checkout = () => {
         paymentMethod: "COD",
       };
 
-      await api.post("/api/orders", orderData, {
+      await api.post("/orders", orderData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
