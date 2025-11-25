@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AdminNavbar from "./AdminNavbar";
 import AdminSidebar from "./AdminSidebar";
-import axios from "axios";
+import api from "../../api/axios";
 
 function AdminDashboard() {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/users", {
+        const res = await api.get("/users", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTotalUsers(res.data.length);
@@ -63,7 +63,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/books");
+        const res = await api.get("/books");
         setTotalBooks(res.data.length);
       } catch (error) {
         console.error("Error fetching books:", error);
@@ -75,7 +75,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/orders/all", {
+        const res = await api.get("/orders/all", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setTotalOrders(res.data.length);
