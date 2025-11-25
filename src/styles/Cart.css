@@ -1,0 +1,12 @@
+.cart-item:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
+.cart-item img {
+  border-radius: 8px;
+}
+
+button {
+  transition: all 0.2s;
+}

@@ -1,0 +1,16 @@
+nav{
+    background: linear-gradient(to bottom, rgb(176, 143, 79), rgb(213, 184, 16), #ffffff);
+}
+
+.carousel-item {
+  height: 400px; 
+
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit:fill;
+}
+body{
+  overflow-x:hidden;
+}

@@ -1,0 +1,23 @@
+
+.blur-box {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  width: 350px;
+  max-width: 90%;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login{
+  background-image: url('../assets/ChatGPT Image Nov 8, 2025, 02_13_57 PM.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}

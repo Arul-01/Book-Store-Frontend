@@ -1,0 +1,143 @@
+[
+  {
+    "title": "Finding My Way",
+    "author": "Malala Yousafzai",
+    "genre": "",
+    "price": 499,
+    "inStock": true,
+    "rating": 4.5,
+    "isbn": "978-1-23456-789-0",
+    "image":"./assets/finding-my-way.jpg"
+  },
+  {
+    "title": "The Devil Is a Southpaw",
+    "author": "Brandon Hobson",
+    "genre": "",
+    "price": 599,
+    "inStock": true,
+    "rating": 4.2,
+    "isbn": "978-1-23456-789-1",
+    "image":"./assets/the-devil-is-a-southpaw.png"
+  },
+  {
+    "title": "King Sorrow",
+    "author": "Joe Hill",
+    "genre": "",
+    "price": 699,
+    "inStock": false,
+    "rating": 4.7,
+    "isbn": "978-1-23456-789-2",
+    "image":"./assets/king_sorrow.jpg"
+  },
+  {
+    
+    "title": "Logical Thinking Puzzles",
+    "author": "Charles Philips",
+    "genre": "Design",
+    "price": 399,
+    "inStock": true,
+    "rating": 4.3,
+    "isbn": "978-1-23456-789-3",
+    "image":"./assets/logical_thinking.jpg"
+  },
+  {
+    
+    "title": "Introduction to java Programming",
+    "author": "daniel Liang",
+    "genre": "Backend",
+    "price": 549,
+    "inStock": true,
+    "rating": 4.6,
+    "isbn": "978-1-23456-789-4",
+    "image":"./assets/java.jpg"
+  },
+  {
+    
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "genre": "Fiction / Fantasy",
+    "price": 499,
+    "inStock": true,
+    "rating": 4.6,
+    "isbn": "978-1-25076-946-5",
+    "image":"./assets/the_midnight_lib.jpg"
+  },
+  {
+    
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-Help",
+    "price": 399,
+    "inStock": true,
+    "rating": 4.8,
+    "isbn": "978-0-7352-1129-2",
+    "image":"./assets/Atomic_habits.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "genre": "Sci-Fi",
+    "price": 599,
+    "inStock": true,
+    "rating": 4.7,
+    "isbn": "978-0-593-13520-4",
+    "image":"./assets/hail_mary.jpg"
+  },
+  {
+
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "genre": "Thriller",
+    "price": 449,
+    "inStock": false,
+    "rating": 4.4,
+    "isbn": "978-1-25030-169-6",
+    "image":"./assets/silent_patient.jpg"
+  },
+  {
+  
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "genre": "Memoir",
+    "price": 699,
+    "inStock": true,
+    "rating": 4.9,
+    "isbn": "978-1-5247-6313-8",
+    "image":"./assets/becoming.jpg"
+  },
+  {
+  
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "genre": "Finance",
+    "price": 349,
+    "inStock": true,
+    "rating": 4.6,
+    "isbn": "978-0-85719-768-9",
+    "image":"./assets/psychology_of_money.jpg"
+  },
+  {
+  
+    "title": "The House in the Cerulean Sea",
+    "author": "TJ Klune",
+    "genre": "Fantasy",
+    "price": 499,
+    "inStock": true,
+    "rating": 4.8,
+    "isbn": "978-1-25021-731-7",
+     "image":"./assets/The-House-in-the-Cerulean-Sea.jpg"
+  },
+  {
+  
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "History / Science",
+    "price": 599,
+    "inStock": true,
+    "rating": 4.7,
+    "isbn": "978-0-06-231609-7",
+    "image":"./assets/sapiens.jpg"
+  }
+]
+
