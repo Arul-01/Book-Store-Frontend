@@ -240,7 +240,8 @@ function Navbar({ Search = true, Cart = true, onSearch }) {
               <input
                 type="search"
                 placeholder="Search By Title, Author, Publisher Or ISBN"
-                className="form-control"
+                className="form-control" value={searchTerm}
+                    onChange={handleInput}
                 autoFocus
               />
               <button className="btn btn-dark text-light" type="button">

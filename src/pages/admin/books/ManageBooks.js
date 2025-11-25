@@ -110,7 +110,8 @@ function ManageBooks() {
               <Spinner animation="border" />
             </div>
           ) : (
-            <Table bordered hover className="shadow-sm">
+            <div className="table-responsive">
+  <Table bordered hover className="shadow-sm">
               <thead className="table-dark">
                 <tr>
                   <th>#</th>
@@ -167,6 +168,7 @@ function ManageBooks() {
                 ))}
               </tbody>
             </Table>
+            </div>
           )}
         </div>
       </div>
