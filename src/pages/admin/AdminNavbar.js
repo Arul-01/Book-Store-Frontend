@@ -11,9 +11,10 @@ function AdminNavbar({ onToggleSidebar }) {
   };
 
   return (
-    <nav className="navbar navbar-dark bg-dark px-4 sticky-top shadow">
-      <div className="d-flex align-items-center">
-        {/* Toggle Button: Visible only on mobile (d-md-none) */}
+    <nav className="navbar navbar-dark bg-dark px-4 sticky-top shadow navbar-expand-md">
+      <div className="container-fluid">
+
+        {/* MOBILE SIDEBAR TOGGLE */}
         <button
           className="btn btn-outline-dark btn-dark d-md-none me-3"
           onClick={onToggleSidebar}
@@ -21,8 +22,8 @@ function AdminNavbar({ onToggleSidebar }) {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="navbar-brand text-dark mb-0 h1 d-flex align-items-center">
-          {/* Assuming logo exists, added fallback text if image fails */}
+        {/* BRAND */}
+        <a className="navbar-brand d-flex align-items-center text-dark">
           <img
             src="/logo.png"
             alt="Logo"
@@ -30,16 +31,38 @@ function AdminNavbar({ onToggleSidebar }) {
             style={{ height: "40px" }}
           />
           Admin Panel
+        </a>
+
+        {/* COLLAPSE BUTTON WHEN SCREEN SMALL */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#adminNavbarMenu"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* COLLAPSIBLE MENU */}
+        <div className="collapse navbar-collapse" id="adminNavbarMenu">
+          <ul className="navbar-nav ms-auto align-items-center gap-3">
+
+            <li className="nav-item">
+              <a className="nav-link fw-bold text-dark" href="/">
+                Home
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <button className="btn btn-danger btn-sm" onClick={handleLogout}>
+                Logout
+              </button>
+            </li>
+
+          </ul>
         </div>
 
-        <a className="nav-link fw-bold" href="/">
-          Home
-        </a>
       </div>
-
-      <button className="btn btn-danger btn-sm" onClick={handleLogout}>
-        Logout
-      </button>
     </nav>
   );
 }

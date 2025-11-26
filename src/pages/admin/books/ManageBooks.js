@@ -97,6 +97,7 @@ function ManageBooks() {
         {/* MAIN CONTENT */}
         <div className="container mt-4">
           <h2 className="fw-bold mb-4">Manage Books</h2>
+          
            <Button
   as={Link}
   to="/admin/add-book"
@@ -104,13 +105,13 @@ function ManageBooks() {
   className="float-end mb-3" // or whatever positioning you want
 >
   Add Book
-</Button>
+</Button><br/>
           {loading ? (
             <div className="text-center mt-5">
               <Spinner animation="border" />
             </div>
           ) : (
-            <div className="table-responsive">
+            <div className="table-responsive mt-5">
   <Table bordered hover className="shadow-sm">
               <thead className="table-dark">
                 <tr>

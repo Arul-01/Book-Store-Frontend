@@ -11,10 +11,10 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // --- Toast States ---
+  
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
-  const [toastVariant, setToastVariant] = useState("danger"); // 'success' or 'danger'
+  const [toastVariant, setToastVariant] = useState("danger"); 
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -38,12 +38,12 @@ function Login() {
         localStorage.setItem("token", result.data.token);
         localStorage.setItem("user", JSON.stringify(result.data.user));
 
-        // --- Success Toast Logic ---
+     
         setToastVariant("success");
         setToastMessage("Login Successful! Redirecting...");
         setShowToast(true);
 
-        // Delay navigation slightly so user sees the toast
+        
         setTimeout(() => {
           if (result.data.user.role === "admin") {
             navigate("/admin/dashboard");
@@ -54,7 +54,6 @@ function Login() {
       })
       .catch((err) => {
         console.log(err);
-        // --- Error Toast Logic ---
         setToastVariant("danger");
         if (err.response && err.response.status === 401) {
           setToastMessage("Invalid email or password");
